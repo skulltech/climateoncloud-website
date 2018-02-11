@@ -1,0 +1,46 @@
+body{
+  perspective: 1000px;
+}
+.container{
+  padding-top:20px;
+  background: #bada55;
+}
+.carousel-container{
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+li{
+  margin: 0;
+  float: left;
+}
+.card{
+  // width: 318px;
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.owl-wrapper{
+}
+.owl-item{
+  transition: all 250ms ease-out;
+  transform: translate3d(0px, 0px, 0px) scale(1);
+  &.active{
+    transform: translate3d(0px, 0px, -10px) scale(1) rotateY(75deg);
+    + .active{
+     transform: translate3d(0px, 0px, 10px) scale(1); 
+      + .active{
+       transform: translate3d(0px, 0px, 20px) scale(1); 
+        + .active{
+         transform: translate3d(0px, 0px, 10px) scale(1); 
+          + .active{
+           transform: translate3d(0px, 0px, -10px) scale(1) rotateY(-75deg); 
+          }
+        }
+      }
+    }
+  }
+}
