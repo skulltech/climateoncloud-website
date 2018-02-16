@@ -4,17 +4,6 @@ body {
 
 .container.marketing {
   padding-top: 20px;
-/*  background: #bada55;
-*/}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  margin: 0;
-  float: left;
 }
 
 .card img {
