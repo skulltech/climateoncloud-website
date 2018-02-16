@@ -7,8 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
-<!--     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css'>
- -->
+
     <!-- Carousel of cards -->
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css'>
@@ -39,10 +38,6 @@
               <a class="nav-link" href="./about">About Us</a>
             </li>
           </ul>
-          <!-- <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
       </nav>
     </header>
@@ -106,91 +101,21 @@
 
         <!-- Three columns of text below the carousel -->
 
-
       <div class="row">
          <div class="col-sm-12">
           <div class="owl-carousel">
+            {% for card in cards %}
               <div class="item">
                 <div class="card">
-                  <img class="card-img-top img-fluid" src="https://placehold.it/318x180" alt="Card image cap">
+                  <img class="card-img-top" src="{{ card['image'] }}"" alt="Card image cap">
                   <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                    <h4 class="card-title">{{ card['title'] }}</h4>
+                    <p class="card-text">{{ card['text'] }}</p>
+                    <a href="{{ card['button']['link'] }}" class="btn btn-primary">{{ card['button']['text'] }}</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="card">
-                  <img class="card-img-top" src="https://placehold.it/318x180" alt="Card image cap">
-                  <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-              </div>
-          </div>
+            {% endfor %}
         </div>
       </div>
         
