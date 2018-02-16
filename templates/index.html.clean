@@ -130,7 +130,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="https://upload.wikimedia.org/wikipedia/commons/a/aa/AlfedPalmersmokestacks.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/a/aa/AlfedPalmersmokestacks.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -142,7 +142,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="https://us-east-1.tchyn.io/snopes-production/uploads/2014/07/globalwarming.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="https://us-east-1.tchyn.io/snopes-production/uploads/2014/07/globalwarming.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
@@ -154,7 +154,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="https://www.theindianwire.com/wp-content/uploads/2017/08/rainfall.jpg" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="https://www.theindianwire.com/wp-content/uploads/2017/08/rainfall.jpg" alt="Generic placeholder image">
           </div>
         </div>
 
