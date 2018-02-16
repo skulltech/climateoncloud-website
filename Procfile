@@ -1,1 +1,1 @@
-web gunicorn yellowpagist:app
+web gunicorn app:app
